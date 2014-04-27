@@ -2,9 +2,9 @@ Andriod Injection
 =========
 
 
-이 프로젝트는 AndroidAnnotation에서 아이디어를 얻었으며,
+이 프로젝트는 [AndroidAnnotation]에서 아이디어를 얻었으며,
 그 프로젝트의 Annotation을 닮으러 노력하였습니다.
-유사 프로젝트로 AndroidAnnotation, butterknife가 있으며,
+유사 프로젝트로 [AndroidAnnotation], [butterknife]가 있으며,
 차이점으로 Annotation processing이 아닌 Reflection을 
 사용하고자 합니다.
 
@@ -57,4 +57,5 @@ Version
 0.1
 
 
-
+[AndroidAnnotation]:http://androidannotations.org/
+[butterknife]:http://jakewharton.github.io/butterknife/
