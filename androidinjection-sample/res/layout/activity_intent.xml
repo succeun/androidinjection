@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="이름 을 입력해 주세요."
+            android:textSize="30sp" />
+        
+        <EditText
+            android:id="@+id/etName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:singleLine="true" />
+        
+        <TextView
+            android:id="@+id/tvAge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="나이를 입력해 주세요."
+            android:textSize="30sp" />
+        
+        <EditText
+            android:id="@+id/etAge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="numberSigned" />
+        
+        <Button
+            android:id="@+id/btnStartActivity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="데이터 전달하기" />
+
+        <Button
+            android:id="@+id/btnResultActivity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="데이터 전달후 결과받기" />
+        
+        <Button
+            android:id="@+id/btnStartActivityInModel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="모델(Model) 데이터 전달하기" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+       <item
+       android:title="다이얼"
+       android:id="@+id/menu_dialog_dialer"
+       android:orderInCategory="1"
+       android:icon="@android:drawable/ic_dialog_dialer"></item>
+       <item
+       android:title="이메일"
+       android:orderInCategory="2"
+       android:id="@+id/menu_dialog_email"
+       android:icon="@android:drawable/ic_dialog_email"></item>
+       <item
+       android:title="지도"
+       android:orderInCategory="3"
+       android:id="@+id/menu_dialog_map"
+       android:icon="@android:drawable/ic_dialog_map"></item>
+       <item
+       android:title="정보"
+       android:orderInCategory="4"
+       android:id="@+id/menu_dialog_info"
+       android:icon="@android:drawable/ic_dialog_info"></item>
+</menu>

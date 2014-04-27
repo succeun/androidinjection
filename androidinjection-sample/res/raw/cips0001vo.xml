@@ -1,0 +1,22 @@
+<root>
+    <ui>
+    	<addressType>
+    	    <label>자택</label>
+    	    <value>01</value>
+    	</addressType>
+    	<addressType>
+    	    <label>직장</label>
+    	    <value>02</value>
+    	</addressType>
+    	<addressType>
+    	    <label>기타</label>
+    	    <value>03</value>
+    	</addressType>
+    </ui>
+	<request>
+		<rsreno></rsreno>
+		<oindyHshdCat></oindyHshdCat>
+		<polhldrInsurdCat></polhldrInsurdCat>
+		<agmtStat></agmtStat>
+	</request>
+</root>
