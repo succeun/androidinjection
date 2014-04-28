@@ -39,7 +39,7 @@ public class ActivityOpenApi extends AnnotationActivity {
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		
-		etWord.setText("Çö´ëÇØ»ó");
+		etWord.setText("ì•ˆë“œë¡œì´ë“œ");
 	}
 	
 	@OnClick(R.id.btnSearch)
@@ -50,22 +50,22 @@ public class ActivityOpenApi extends AnnotationActivity {
 	@Background
 	public void getRealSearchWord(String word) {
 		try {
-			// 1. ÁúÀÇ URL
+			// 1. ì§ˆì˜ URL
 			String openapiKey = "a716f06649cc8bb5ac93c1acc054d031";
 			String queryURL = "http://openapi.naver.com/search?key=" + openapiKey
 					+ "&query="+ URLEncoder.encode(word, "utf-8")+"&target=news&start=1&display=10";
 	
-			// 2. ÁúÀÇ¿äÃ»
+			// 2. ì§ˆì˜ìš”ì²­
 			URL url = new URL(queryURL);
 			URLConnection connection = url.openConnection();
 			InputStream is = connection.getInputStream();
 	
-			// 3. ÁúÀÇ°á°ú XML¿¡ ´ëÇÑ Á¢±Ù Ã³¸®
+			// 3. ì§ˆì˜ê²°ê³¼ XMLì— ëŒ€í•œ ì ‘ê·¼ ì²˜ë¦¬
 //			model = new Model(this, is);
 //			invokeUiThread("setListView", model);
 		} catch (FileNotFoundException e) {
 			// HTTP_BAD_REQUEST 400
-			alert("Åë½ÅÁß ¿¡·¯°¡ ¹ß»ıÇÏ¿´½À´Ï´Ù.\n´Ù½Ã ½ÃµµÇÏ½Ã±â ¹Ù¶ø´Ï´Ù.");
+			alert("í†µì‹ ì¤‘ ì—ëŸ¬ê°€ ë°œìƒí•˜ì˜€ìŠµë‹ˆë‹¤.\në‹¤ì‹œ ì‹œë„í•˜ì‹œê¸° ë°”ëë‹ˆë‹¤.");
 		} catch (IOException e) {
 			throw new MobileException(e);
 		}
@@ -81,11 +81,11 @@ public class ActivityOpenApi extends AnnotationActivity {
 //	
 //	@OnGetView(R.id.lvNews)
 //	public void onGetView(int position, View convertView, ViewGroup parent, Model sub) {
-//		// XML ±¸Á¶ ¿¹Á¦
+//		// XML êµ¬ì¡° ì˜ˆì œ
 //		// http://openapi.naver.com/search?key=a716f06649cc8bb5ac93c1acc054d031&query=%EC%A3%BC%EC%8B%9D&target=news&start=1&display=10
 //		System.out.println(sub.toString());
 //		TextView textView = (TextView) convertView.findViewById(R.id.tvTitle);
-//		textView.setText(Html.fromHtml(sub.getValue("/item/title")));	// Å°¿öµå
+//		textView.setText(Html.fromHtml(sub.getValue("/item/title")));	// í‚¤ì›Œë“œ
 //		
 //		TextView textView1 = (TextView) convertView.findViewById(R.id.tvDescription);
 //		textView1.setText(Html.fromHtml(sub.getValue("/item/description")));
